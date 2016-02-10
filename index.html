@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Nick Castaneda</title>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <!-- Angular Files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+  <script src="javascripts/js/app.js"></script>
+
+  <!-- Foundation files -->
+  <link href="/stylesheets/_normalize.css" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/app.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
+  <script src="javascripts/vendor/custom.modernizr.js"></script>
+</head>
+
+<body ng-app="NickCastaneda">
+
+  <div class="top-bar">
+    <div class="top-bar-title">
+      <a ui-sref='home'>NC</a>
+    </div>
+    <div class="top-bar-right">
+      <ul class="inline-list" id="nav-list">
+        <li><a ui-sref='about'>about me</a></li>
+        <li><a ui-sref='projects'>projects</a></li>
+        <li><a ui-sref='contact'>contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <header>
+		<div class="medium-12 columns">
+			<h2>Nick Castañeda</h2>
+			<p><em>I've got plenty fans but I ain't shit without my haters</em></p>
+		</div>
+  </header>
+
+  <section ui-view>
+  </section>
+
+  <footer>
+    <p id="copyright">Created by: Nick Castañeda #chillAF</p>
+  </footer>
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+
+  <script src="javascripts/foundation/foundation.js"></script>
+	<script src="javascripts/foundation/foundation.abide.js"></script>
+	<script src="javascripts/foundation/foundation.alerts.js"></script>
+	<script src="javascripts/foundation/foundation.clearing.js"></script>
+	<script src="javascripts/foundation/foundation.cookie.js"></script>
+	<script src="javascripts/foundation/foundation.dropdown.js"></script>
+	<script src="javascripts/foundation/foundation.forms.js"></script>
+	<script src="javascripts/foundation/foundation.interchange.js"></script>
+	<script src="javascripts/foundation/foundation.joyride.js"></script>
+	<script src="javascripts/foundation/foundation.magellan.js"></script>
+	<script src="javascripts/foundation/foundation.orbit.js"></script>
+	<script src="javascripts/foundation/foundation.placeholder.js"></script>
+	<script src="javascripts/foundation/foundation.reveal.js"></script>
+	<script src="javascripts/foundation/foundation.section.js"></script>
+	<script src="javascripts/foundation/foundation.tooltips.js"></script
+	<script src="javascripts/foundation/foundation.topbar.js"></script>
+
+  <script>
+    $(document).foundation();
+  </script>
+
+</body>
+</html>

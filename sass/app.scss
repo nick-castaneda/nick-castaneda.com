@@ -1,0 +1,180 @@
+// Global Foundation Settings
+@import "settings";
+
+// Comment out this import if you don't want to use normalize
+@import "normalize";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+@import "foundation/components/global"; // *always required
+@import "foundation/components/grid";
+
+//
+// Use this grid if you want to start using the new Foundation 5 grid early.
+// It will change breakpoints to min-width: 640px and 1024px.
+//
+@import "foundation/components/grid-5";
+
+
+@import "foundation/components/visibility";
+@import "foundation/components/block-grid";
+@import "foundation/components/type";
+@import "foundation/components/buttons";
+@import "foundation/components/forms"; // *requires components/buttons
+@import "foundation/components/custom-forms"; // *requires components/buttons, components/forms
+@import "foundation/components/button-groups"; // *requires components/buttons
+@import "foundation/components/dropdown-buttons"; // *requires components/buttons
+@import "foundation/components/split-buttons"; // *requires components/buttons
+@import "foundation/components/flex-video";
+@import "foundation/components/section";
+@import "foundation/components/top-bar";  // *requires components/grid
+@import "foundation/components/orbit";
+@import "foundation/components/reveal";
+@import "foundation/components/joyride";
+@import "foundation/components/clearing";
+@import "foundation/components/alert-boxes";
+@import "foundation/components/breadcrumbs";
+@import "foundation/components/keystrokes";
+@import "foundation/components/labels";
+@import "foundation/components/inline-lists";
+@import "foundation/components/pagination";
+@import "foundation/components/panels";
+@import "foundation/components/pricing-tables";
+@import "foundation/components/progress-bars";
+@import "foundation/components/side-nav";
+@import "foundation/components/sub-nav";
+@import "foundation/components/switch";
+@import "foundation/components/magellan";
+@import "foundation/components/tables";
+@import "foundation/components/thumbs";
+@import "foundation/components/tooltips";
+@import "foundation/components/dropdown";
+
+
+
+////////////////////////////////////////////////////////////////////////
+//                     nick-castaneda.com Styles                      //
+////////////////////////////////////////////////////////////////////////
+
+/* General Styles */
+body{
+  background-color: #222930;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.top-bar{
+  background-color: #222930;
+  border-bottom: 4px solid #4EB1BA;
+  margin-bottom: 50px;
+  font-size: 25px;
+  .top-bar-title{
+    float: left;
+    margin-left: 10%;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  #nav-list{
+    float: right;
+    margin-right: 10%;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}
+
+header{
+  text-align: center;
+  margin: -50px 0 75px 0;
+  height: 350px;
+  // background-image: linear-gradient(to bottom, rgba(34, 41, 48, 0.50) 0%, rgba(34, 41, 48, 0.50) 100%), url("https://upload.wikimedia.org/wikipedia/commons/7/7d/Los_Angeles_Panorama.jpg");
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/7d/Los_Angeles_Panorama.jpg");
+  background-position: center top;
+  background-color: rgba(34,41,48, 0);
+  border-bottom: 4px solid #4EB1BA;
+  h2{
+    color: #4EB1BA;
+    font-size: 80px;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-top: 75px;
+  }
+  p{
+    font-size: 22px;
+    margin-top: 100px;
+    color: white;
+  }
+}
+
+footer{
+  margin-top: 50px;
+  p{
+    font-size: 15px;
+    text-align: center;
+    color: #4EB1BA;
+  }
+}
+
+/* Section Styles */
+section{
+  margin-top: -50px;
+  #section-title-div{
+    h3{
+      text-align: center;
+      font-size: 40px;
+      color: #4EB1BA;
+      text-decoration: underline;
+      margin-bottom: -10px;
+    }
+  }
+}
+
+#home{
+  #section-title-div{
+    h3{
+      text-decoration: none;
+    }
+    h4{
+      color: white;
+      text-align: center;
+    }
+  }
+}
+
+#about-me{
+  .sub-section{
+    margin-top: 40px;
+  }
+  .right { float: right }
+  .left { float: left }
+  .about-text{
+    strong{
+      color: #4EB1BA;
+    }
+    h4{
+      text-align: center;
+      color: #4EB1BA;
+    }
+    vertical-align: middle;
+    color: white;
+  }
+  .image-holder{
+    border: 8px solid #4EB1BA;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+}
+
+
+
+
