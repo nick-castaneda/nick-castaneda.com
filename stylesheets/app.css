@@ -8037,41 +8037,51 @@ body {
 }
 
 /* line 69, ../sass/app.scss */
+.right {
+  float: right;
+}
+
+/* line 70, ../sass/app.scss */
+.left {
+  float: left;
+}
+
+/* line 72, ../sass/app.scss */
 .top-bar {
   background-color: #222930;
   border-bottom: 4px solid #4EB1BA;
   margin-bottom: 50px;
   font-size: 25px;
 }
-/* line 74, ../sass/app.scss */
+/* line 77, ../sass/app.scss */
 .top-bar .top-bar-title {
   float: left;
   margin-left: 10%;
   font-size: 30px;
   font-weight: bold;
 }
-/* line 80, ../sass/app.scss */
+/* line 83, ../sass/app.scss */
 .top-bar #nav-list {
   float: right;
   margin-right: 10%;
 }
-/* line 84, ../sass/app.scss */
+/* line 87, ../sass/app.scss */
 .top-bar a {
   text-decoration: none;
   color: white;
 }
 
-/* line 90, ../sass/app.scss */
+/* line 93, ../sass/app.scss */
 header {
   text-align: center;
   margin: -50px 0 75px 0;
   height: 350px;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/7d/Los_Angeles_Panorama.jpg");
+  background-image: linear-gradient(to bottom, rgba(34, 41, 48, 0.5) 0%, rgba(34, 41, 48, 0.5) 100%), url("https://upload.wikimedia.org/wikipedia/commons/7/7d/Los_Angeles_Panorama.jpg");
   background-position: center top;
   background-color: rgba(34, 41, 48, 0);
   border-bottom: 4px solid #4EB1BA;
 }
-/* line 99, ../sass/app.scss */
+/* line 101, ../sass/app.scss */
 header h2 {
   color: #4EB1BA;
   font-size: 80px;
@@ -8079,18 +8089,18 @@ header h2 {
   margin: 0 auto;
   margin-top: 75px;
 }
-/* line 106, ../sass/app.scss */
+/* line 108, ../sass/app.scss */
 header p {
   font-size: 22px;
   margin-top: 100px;
   color: white;
 }
 
-/* line 113, ../sass/app.scss */
+/* line 115, ../sass/app.scss */
 footer {
   margin-top: 50px;
 }
-/* line 115, ../sass/app.scss */
+/* line 117, ../sass/app.scss */
 footer p {
   font-size: 15px;
   text-align: center;
@@ -8098,11 +8108,11 @@ footer p {
 }
 
 /* Section Styles */
-/* line 123, ../sass/app.scss */
+/* line 125, ../sass/app.scss */
 section {
   margin-top: -50px;
 }
-/* line 126, ../sass/app.scss */
+/* line 128, ../sass/app.scss */
 section #section-title-div h3 {
   text-align: center;
   font-size: 40px;
@@ -8110,53 +8120,127 @@ section #section-title-div h3 {
   text-decoration: underline;
   margin-bottom: -10px;
 }
+/* line 136, ../sass/app.scss */
+section h4 {
+  text-align: center;
+  color: #4EB1BA;
+}
 
-/* line 138, ../sass/app.scss */
+/* line 144, ../sass/app.scss */
 #home #section-title-div h3 {
   text-decoration: none;
 }
-/* line 141, ../sass/app.scss */
-#home #section-title-div h4 {
+/* line 145, ../sass/app.scss */
+#home #section-title-div h5 {
   color: white;
   text-align: center;
 }
 
-/* line 149, ../sass/app.scss */
+/* line 153, ../sass/app.scss */
 #about-me .sub-section {
   margin-top: 40px;
 }
-/* line 152, ../sass/app.scss */
-#about-me .right {
-  float: right;
-}
-/* line 153, ../sass/app.scss */
-#about-me .left {
-  float: left;
-}
-/* line 154, ../sass/app.scss */
+/* line 156, ../sass/app.scss */
 #about-me .about-text {
   vertical-align: middle;
   color: white;
 }
-/* line 155, ../sass/app.scss */
+/* line 157, ../sass/app.scss */
 #about-me .about-text strong {
   color: #4EB1BA;
 }
-/* line 158, ../sass/app.scss */
-#about-me .about-text h4 {
-  text-align: center;
-  color: #4EB1BA;
-}
-/* line 165, ../sass/app.scss */
+/* line 161, ../sass/app.scss */
 #about-me .image-holder {
   border: 8px solid #4EB1BA;
   height: 200px;
   width: 200px;
   border-radius: 50%;
 }
-/* line 170, ../sass/app.scss */
+/* line 166, ../sass/app.scss */
 #about-me .image-holder img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+}
+
+/* line 175, ../sass/app.scss */
+#projects .project {
+  margin-top: 50px;
+}
+/* line 177, ../sass/app.scss */
+#projects .project p {
+  color: white;
+}
+/* line 178, ../sass/app.scss */
+#projects .project a {
+  text-decoration: underline;
+  color: white;
+}
+/* line 182, ../sass/app.scss */
+#projects .project .links {
+  text-align: center;
+}
+/* line 184, ../sass/app.scss */
+#projects .project .links a {
+  color: #4EB1BA;
+}
+/* line 186, ../sass/app.scss */
+#projects .project .computer-screen {
+  height: 200px;
+  width: 300px;
+  border: 10px solid white;
+  border-radius: 50px;
+}
+/* line 191, ../sass/app.scss */
+#projects .project .computer-screen img {
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+}
+
+/* line 201, ../sass/app.scss */
+#contact .contact-row {
+  margin-top: 50px;
+}
+/* line 203, ../sass/app.scss */
+#contact .contact-row .contact-box {
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
+  padding: 15px;
+  overflow: auto;
+  border-radius: 20px;
+}
+/* line 210, ../sass/app.scss */
+#contact .contact-row .contact-box p {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+/* line 215, ../sass/app.scss */
+#contact .contact-row .contact-box h5 {
+  margin-top: 30px;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+/* line 223, ../sass/app.scss */
+#contact .contact-row #first {
+  background-color: #B08B0D;
+}
+/* line 225, ../sass/app.scss */
+#contact .contact-row #first h5 {
+  margin-top: 13px;
+}
+/* line 227, ../sass/app.scss */
+#contact .contact-row #second {
+  background-color: #428F89;
+}
+/* line 228, ../sass/app.scss */
+#contact .contact-row #third {
+  background-color: #5F6024;
+}
+/* line 229, ../sass/app.scss */
+#contact .contact-row #fourth {
+  background-color: #805489;
 }

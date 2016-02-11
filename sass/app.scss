@@ -64,7 +64,10 @@
 body{
   background-color: #222930;
   font-family: 'Montserrat', sans-serif;
+  // background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/7d/Los_Angeles_Panorama.jpg");
 }
+.right { float: right }
+.left { float: left }
 
 .top-bar{
   background-color: #222930;
@@ -91,8 +94,7 @@ header{
   text-align: center;
   margin: -50px 0 75px 0;
   height: 350px;
-  // background-image: linear-gradient(to bottom, rgba(34, 41, 48, 0.50) 0%, rgba(34, 41, 48, 0.50) 100%), url("https://upload.wikimedia.org/wikipedia/commons/7/7d/Los_Angeles_Panorama.jpg");
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/7d/Los_Angeles_Panorama.jpg");
+  background-image: linear-gradient(to bottom, rgba(34, 41, 48, 0.50) 0%, rgba(34, 41, 48, 0.50) 100%), url("https://upload.wikimedia.org/wikipedia/commons/7/7d/Los_Angeles_Panorama.jpg");
   background-position: center top;
   background-color: rgba(34,41,48, 0);
   border-bottom: 4px solid #4EB1BA;
@@ -131,14 +133,16 @@ section{
       margin-bottom: -10px;
     }
   }
+  h4{
+    text-align: center;
+    color: #4EB1BA;
+  }
 }
 
 #home{
   #section-title-div{
-    h3{
-      text-decoration: none;
-    }
-    h4{
+    h3{ text-decoration: none }
+    h5{
       color: white;
       text-align: center;
     }
@@ -149,16 +153,8 @@ section{
   .sub-section{
     margin-top: 40px;
   }
-  .right { float: right }
-  .left { float: left }
   .about-text{
-    strong{
-      color: #4EB1BA;
-    }
-    h4{
-      text-align: center;
-      color: #4EB1BA;
-    }
+    strong{ color: #4EB1BA }
     vertical-align: middle;
     color: white;
   }
@@ -175,6 +171,63 @@ section{
   }
 }
 
+#projects{
+  .project{
+    margin-top: 50px;
+    p{ color: white }
+    a{
+      text-decoration: underline;
+      color: white
+    }
+    .links{
+      text-align: center;
+      a{ color: #4EB1BA }
+    }
+    .computer-screen{
+      height: 200px;
+      width: 300px;
+      border: 10px solid white;
+      border-radius: 50px;
+      img{
+        height: 100%;
+        width: 100%;
+        border-radius: 40px;
+      }
+    }
+  }
+}
 
+#contact{
+  .contact-row{
+    margin-top: 50px;
+    .contact-box{
+      width: 200px;
+      height: 200px;
+      border: 5px solid white;
+      padding: 15px;
+      overflow: auto;
+      border-radius: 20px;
+      p{
+        color: white;
+        text-align: center;
+        font-size: 20px;
+      }
+      h5{
+        margin-top: 30px;
+        color: white;
+        text-align: center;
+        // text-decoration: underline;
+        font-size: 30px;
+      }
+    }
+    #first{
+      background-color: #B08B0D;
+      h5{ margin-top: 13px }
+    }
+    #second{background-color: #428F89}
+    #third{background-color: #5F6024}
+    #fourth{background-color: #805489}
+  }
+}
 
 
