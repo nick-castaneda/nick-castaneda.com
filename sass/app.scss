@@ -63,8 +63,9 @@
 /* General Styles */
 body{
   background-color: #222930;
+  // background-image: linear-gradient(to bottom, rgba(34, 41, 48, 0.50) 0%, rgba(34, 41, 48, 0.50) 100%), url("https://upload.wikimedia.org/wikipedia/commons/7/7d/Los_Angeles_Panorama.jpg../public/images/blackAndWhiteSkyline.jpg");
+  // background-position: center top;
   font-family: 'Montserrat', sans-serif;
-  // background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/7d/Los_Angeles_Panorama.jpg");
 }
 .right { float: right }
 .left { float: left }
@@ -216,7 +217,6 @@ section{
         margin-top: 30px;
         color: white;
         text-align: center;
-        // text-decoration: underline;
         font-size: 30px;
       }
     }

@@ -1,0 +1,38 @@
+<section id="expression-simplifier" ng-controller="expressionController as expression">
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h1 ng-click="expression.pushToArr()">Expression Simplify<lifier</h1>
+      <hr>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-8 large-centered columns">
+      <form ng-submit="expression.post()" id="expression-form">
+        <input type="text" id="exp-input-box"/>
+        <input type="submit" id="exp-submit" class="button round primary"/>
+      </form>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 large-centered columns">
+      <center id="expression-holder">
+        <!-- Bainas go here -->
+      </center>
+      <hr>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-3 large-centered columns">
+      <center id="combine-holder">
+        <form ng-submit="expression.combine()">
+          <input type="submit" class="button round primary" value="Combine Like Terms!"/>
+        </form>
+      </center>
+    </div>
+  </div>
+
+</section>
